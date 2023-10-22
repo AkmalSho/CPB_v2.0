@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Profile Builder</h1>
+        <label>Select Customer Type</label>
+        <select id="customerType" onchange="displayFields()">
+            <option value="select">--Select--</option>
+            <option value="B2C">B2C</option>
+            <option value="B2B">B2B</option>
+        </select>
+        <div id="B2Cfields" class="hidden">
+            <!-- B2C fields -->
+            <label>Demographics:</label>
+            <input type="text" id="demographics">
+            <label>Geographic Information:</label>
+            <input type="text" id="geographicInfo">
+            <label>Psychographic Information:</label>
+            <input type="text" id="psychographicInfo">
+            <label>Digital Behavior (Online):</label>
+            <input type="text" id="digitalBehavior">
+            <label>Buying Patterns and Motivations:</label>
+            <input type="text" id="buyingPatterns">
+            <label>Customer Feedback and Experience:</label>
+            <input type="text" id="feedbackExperience">
+            <label>Goals and Challenges:</label>
+            <input type="text" id="goalsChallenges">
+            <label>Brand Interactions:</label>
+            <input type="text" id="brandInteractions">
+            <label>Employment Information:</label>
+            <input type="text" id="employmentInfo">
+            <label>Technographic Information:</label>
+            <input type="text" id="technographicInfo">
+        </div>
+        <div id="B2Bfields" class="hidden">
+            <!-- B2B fields -->
+            <label>Company Demographics:</label>
+            <input type="text" id="companyDemographics">
+            <label>Key Decision Maker Profile:</label>
+            <input type="text" id="keyDecisionProfile">
+            <label>Buying Process:</label>
+            <input type="text" id="buyingProcess">
+            <label>Company Goals and Challenges:</label>
+            <input type="text" id="companyGoalsChallenges">
+            <label>Company Culture:</label>
+            <input type="text" id="companyCulture">
+            <label>Sustainability Practices:</label>
+            <input type="text" id="sustainabilityPractices">
+            <label>Security & Privacy Concerns:</label>
+            <input type="text" id="securityPrivacyConcerns">
+            <label>Security & Privacy Requirements:</label>
+            <input type="text" id="securityPrivacyRequirements">
+            <label>Vendor Preferences:</label>
+            <input type="text" id="vendorPreferences">
+        </div>
+        <button>Submit</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
